@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            
+            // map
+            ViewMap()
+                .frame(height: 300)
+                .edgesIgnoringSafeArea(.top)
+            
+            //image
+            ViewImage()
+                .offset(y: -100)
+                .padding(.bottom, -100)
+            
+            // Text
+            ViewText()
+            
+            // spacer
+            Spacer()
+
+        }
     }
 }
 
